@@ -8,6 +8,5 @@ def main():
                 print(i,j,N-i-j)
                 return
     print('-1','-1','-1')
-
 if __name__ == '__main__':
     main()

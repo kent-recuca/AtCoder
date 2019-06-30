@@ -8,7 +8,7 @@ def main():
         xst = r*xs[i]-D
         xs.append(xst)
         if i != 0:
-            print(xs[i])
+            # print(xs[i])
     print(xs[10])
 if __name__ == '__main__':
     main()

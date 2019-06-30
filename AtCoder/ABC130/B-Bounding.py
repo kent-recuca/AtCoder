@@ -6,11 +6,8 @@ def main():
     count = 1
     for i in range(N):
         Ls = Ls+L[i]
-        #print(Ls)
         if Ls<=X:
             count+=1
     print(count)
-
-
 if __name__ == '__main__':
     main()

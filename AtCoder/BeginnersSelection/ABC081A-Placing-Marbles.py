@@ -8,12 +8,5 @@ def main():
         if i == "1":
             out +=1
     print(out)
-
 if __name__ == '__main__':
     main()
-
-# a =list(input())
-# r = 0
-# for n in a:
-#     r += int(n)
-# print(r)

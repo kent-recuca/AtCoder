@@ -11,6 +11,5 @@ def main():
         else:
             ans -= A[i]
     print(ans)
-
 if __name__ == '__main__':
     main()

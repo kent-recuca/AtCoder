@@ -3,7 +3,6 @@ def main():
     answer = ''
     N,K = map(int,input().split())
     S = list(input())
-    print(N,K,S)
     if S[K-1] == 'A':
         S[K-1] = 'a'
     elif S[K-1] == 'B':

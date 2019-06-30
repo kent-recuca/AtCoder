@@ -8,6 +8,5 @@ def main():
         if A<=I<=B:
             out.append(i)
     print(sum(out))
-
 if __name__== '__main__':
     main()

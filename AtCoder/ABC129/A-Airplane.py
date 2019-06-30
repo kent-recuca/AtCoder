@@ -6,7 +6,6 @@ def main():
     X.append(P+Q)
     X.append(P+R)
     X.append(Q+R)
-    #print(X)
     for i in X:
         if XX > i:
             XX = i

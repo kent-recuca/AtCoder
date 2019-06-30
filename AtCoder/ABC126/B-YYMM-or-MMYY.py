@@ -3,10 +3,8 @@ def main():
     flg = 0
     answer = ['NA','AMBIGUOUS','YYMM','MMYY']
     data = list(input())
-    print(data)
     front = data[0] + data[1]
     back = data[2] + data[3]
-    print(front,back)
     front = int(front)
     back = int(back)
     if 1<=front<=12 and 1<=back<=12:

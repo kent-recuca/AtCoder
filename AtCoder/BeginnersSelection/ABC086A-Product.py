@@ -5,6 +5,5 @@ def main():
         print("Even")
     else:
         print("Odd")
-
 if __name__ == '__main__':
     main()
