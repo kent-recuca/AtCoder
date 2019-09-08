@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 def main():
     N,M = map(int,input().split())
-    A = [int(input()) for i in range(M)]
+    A = set([int(input()) for _ in range(M)])
     MOD = 1000000007
-    ans = [0,1]
-    for i in range(1,N):
+    ans = [1]
+    ans.append(0) if 1 in A else ans.append(1)
+    for i in range(2,N+1):
+        ans.append(0)
         if i in A:
-            ans.append(0)
-        else:
-            
-
+            continue
+        ans[i] += (ans[i-1] + ans[i-2])
+    print(ans[N] % MOD)
 if __name__ == '__main__':
     main()
