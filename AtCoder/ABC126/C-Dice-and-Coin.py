@@ -1,18 +1,11 @@
 # -*- coding: utf-8 -*-
-from fractions import Fraction
 def main():
     N,K = map(int,input().split())
-    countlist = []
-    answer = 0
-    for i in range(N):
-        count = 0
-        while i+1 <= K-1:
-            i += (i+1)*2
-            count +=1
-        countlist.append(count)
-    for j in countlist:
-        answer += Fraction(1,N) * Fraction(1,2)**j
-    print(answer)
-
+    ans = 0
+    for i in range(1,N+1):
+        n = 0
+        while i < K:i*=2;n+=1
+        ans += ((1/N)*(1/2)**n)
+    print(ans)
 if __name__ == '__main__':
     main()
